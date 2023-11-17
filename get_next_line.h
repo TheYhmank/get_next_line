@@ -6,7 +6,7 @@
 /*   By: ayermeko <ayermeko@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:20:24 by ayermeko          #+#    #+#             */
-/*   Updated: 2023/11/15 15:53:14 by ayermeko         ###   ########.fr       */
+/*   Updated: 2023/11/17 17:04:05 by ayermeko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-typedef struct s_list
-{
-	char			*str_buf;
-	struct s_list	*next;
-}				t_list;
-
+char *ft_read_append(int fd, char backup);
+char *get_next_line(int fd);
 
 #endif
